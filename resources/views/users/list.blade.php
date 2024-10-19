@@ -14,11 +14,12 @@
                 <thead class="bg-gray-50">
                 <tr>
                     <th class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">#</th>
-                    <th class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">First Name</th>
-                    <th class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Last Name</th>
+                    <th class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Avatar</th>
                     <th class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Employee ID</th>
                     <th class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">User Name</th>
                     <th class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Email</th>
+                    <th class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">User Role</th>
+                    <th class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Status</th>
                     <th class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">Action</th>
                 </tr>
                 </thead>
@@ -26,11 +27,12 @@
                 @foreach($users as $user)
                     <tr class="hover:bg-gray-100">
                         <td class="px-4 py-2 whitespace-nowrap">{{ $user->id }}</td>
-                        <td class="px-4 py-2 whitespace-nowrap">{{ $user->first_name }}</td>
-                        <td class="px-4 py-2 whitespace-nowrap">{{ $user->last_name }}</td>
+                        <td class="px-4 py-2 whitespace-nowrap"></td>
                         <td class="px-4 py-2 whitespace-nowrap">{{ $user->empId }}</td>
                         <td class="px-4 py-2 whitespace-nowrap">{{ $user->username }}</td>
                         <td class="px-4 py-2 whitespace-nowrap">{{ $user->email }}</td>
+                        <td class="px-4 py-2 whitespace-nowrap"></td>
+                        <td class="px-4 py-2 whitespace-nowrap"></td>
                         <td class="px-4 py-2 whitespace-nowrap">
                             <x-secondary-button>Edit</x-secondary-button>
                         </td>
